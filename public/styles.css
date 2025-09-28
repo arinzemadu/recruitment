@@ -1,0 +1,8 @@
+:root { --brand-hue: 215; --brand-sat: 85%; --brand-light: 52%; }
+html { scroll-behavior: smooth; }
+.text-primary { color: hsl(var(--brand-hue) var(--brand-sat) var(--brand-light)) !important; }
+.bg-gradient { background: linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0)); }
+.step { position: relative; }
+.step-number { position: absolute; top: -14px; left: -14px; width: 40px; height: 40px; border-radius: 12px;
+  display: grid; place-items: center; background: hsl(var(--brand-hue) var(--brand-sat) 95%);
+  color: hsl(var(--brand-hue) var(--brand-sat) 35%); font-weight: 700; box-shadow: 0 1px 2px rgba(0,0,0,0.08); }

@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: it-recruitment-brochure
+    env: node
+    plan: free
+    buildCommand: npm ci
+    startCommand: node server.js
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
